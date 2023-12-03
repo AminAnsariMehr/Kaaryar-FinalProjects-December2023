@@ -1,0 +1,30 @@
+@import url(./CSSReset.css);
+@import url(./fontVazirMatn.css);
+@import url();
+@import url();
+@import url();
+@import url();
+@import url();
+
+/* * {
+    box-sizing: border-box;
+} */
+
+body {
+    background: #7DEF4C;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: red;
+    width: 1124px;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.
