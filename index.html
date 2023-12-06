@@ -9,9 +9,11 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
-    <!-- <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"
-        type="text/css" /> -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
     <link rel="stylesheet" href="./assets/Styles/style.css">
+    <script defer src="./assets/Scripts/googleSections.js"></script>
+
 </head>
 
 <body>
@@ -22,41 +24,34 @@
                 <h1 class="logoTitle">دستیار</h1>
             </a>
             <section class="signUpApp">
-                <span class=" material-symbols-outlined signUpApp__signUpIcon">person</span>
-                <div class="signUpApp__signUpContainer">
-
-                </div>
+                <iconify-icon icon="fluent:person-32-filled" class="signUpApp__signUpIcon"></iconify-icon>
             </section>
             <section class="settingApp">
-                <span class="material-symbols-outlined settingApp__settingIcon">settings</span>
-                <div class="settingApp_settingContainer">
-
-                </div>
+                <iconify-icon icon="ant-design:setting-filled" class="settingApp__settingIcon"></iconify-icon>
             </section>
         </header>
         <main class="main">
+
+            <!---------------- Start Of To Do Section ---------------->
             <section class="todoSection">
                 <header class="todoSectionHeader">
                     <h2 class="todoSection__Title">دست نویس</h2>
-                    <span class="material-symbols-outlined todoSection__visibilityOff">visibility_off</span>
+                    <iconify-icon icon="material-symbols:visibility-off"
+                        class="todoSection__visibilityOff"></iconify-icon>
                 </header>
+
+                <!------- Start Of Tasks List ------->
                 <ul class="todoSection__TasksList">
                     <li class="todoSection__TasksItem">
-
                         <i class="todoSection__checkBoxIcon"></i>
                         <span class="todoSection__userTaskContent">کار شماره اول من</span>
-                        <span class="material-symbols-outlined  todoSection__editIcon">edit</span>
-                        <span class="material-symbols-outlined  todoSection__removeIcon">delete</span>
+                        <iconify-icon icon="solar:pen-bold" class="todoSection__editIcon"></iconify-icon>
+                        <iconify-icon icon="fluent:delete-16-filled" class="todoSection__removeIcon"></iconify-icon>
                     </li>
-
-
-
-                    <li class="todoSection__TasksItem">کار شماره دوم من
-                        <!-- <i class="fi fi-tr-pen-circle"></i> -->
-                    </li>
-                    <li class="todoSection__TasksItem">کار شماره سوم من</li>
-                    <li class="todoSection__TasksItem">کار شماره چهارم من</li>
                 </ul>
+                <!-------- End Of Tasks List -------->
+
+                <!---- Start Of Add Task Section ---->
                 <section class="todoSection__addTaskSection">
                     <div class="todoSection__addInputWrapper">
                         <input class="todoSection__addInputTask" type="text" placeholder="نوشتن تسک جدید">
@@ -65,44 +60,91 @@
                         </button>
                     </div>
                 </section>
+                <!----- End Of Add Task Section ----->
             </section>
+            <!----------------- End Of To Do Section ----------------->
 
+            <!--------------- Start Of GooGle Sections --------------->
             <section class="googleSection">
-                <div class="googleSearchBox">
-                    <input type="text" class="googleSearchBox__searchInput">
-                    <img src="./assets/Images/Google/icons8-google-48.svg" alt="googleLogo"
-                        class="googleSearchBox__googleLogo">
-                    <button class="googleSearchBox__searchBtn">
-                        <span class="material-symbols-outlined">search</span>
-                    </button>
-
+                <div class="googleSearchSection">
+                    <section class="googleSearchBoxWrapper">
+                        <input type="text" class="googleSearchBox__searchInput" placeholder="جستجو در گوگل">
+                        <img src="./assets/Images/Google/icons8-google-48.svg" alt="googleLogo"
+                            class="googleSearchBox__googleLogo">
+                        <button class="googleSearchBox__searchBtn">
+                            <iconify-icon icon="majesticons:search-line" rotate="270deg" flip="horizontal"
+                                class="googleSearchBox__searchIcon"></iconify-icon>
+                        </button>
+                    </section>
                 </div>
-                <div class="favoriteWebsites">
-                    <div class="favoriteWebsites__appBlock">
-                        <span
-                            class="material-symbols-outlined favoriteWebsites__appIcon favoriteWebsites__appIcon--size ">apps</span>
-                        <span class="favoriteWebsites__appName favoriteWebsites__appName--Bold">دم دستی</span>
+                <div class="favoriteWebsites"></div>
+            </section>
+            <!---------------- End Of GooGle Sections ---------------->
+
+            <section class="timeAndWeatherSection">
+
+                <div class="timeSection">
+                    <div class="timeSection__timeIndicator">22:26</div>
+                    <div class="timeSection__calendersSection">
+                        <div class="solarCalendar">15 آذر</div>
+                        <div class="timeSection__doubleCalender">
+                            <div class="lunarCalendar">
+                                <span class="lunarCalendar__year">1445</span>
+                                <span class="lunarCalendar__month">جمادی الاول</span>
+                                <span class="lunarCalendar__day">22</span>
+                            </div>
+                            <div class="gregorianCalendar">
+                                <span class="gregorianCalendar__year">2023</span>
+                                <span class="gregorianCalendar__month">Dec</span>
+                                <span class="gregorianCalendar__day">6</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="favoriteWebsites__appBlock">
-                        <img class="favoriteWebsites__appLogo" src="./assets/Images/Google/icons8-google-96.svg"
-                            alt="logo">
-                        <span class="favoriteWebsites__appName">شب</span>
+                    <div class="timeSection__btnsWrapper">
+                        <div class="timeSection__timer">
+                            <span>تایمر</span>
+                            <iconify-icon icon="ep:arrow-down"></iconify-icon>
+                        </div>
+                        <div class="timeSection__oqat">
+                            <span>اوقات شرعی</span>
+                            <iconify-icon icon="ep:arrow-down"></iconify-icon>
+                        </div>
                     </div>
-                    <div class="favoriteWebsites__appBlock"><span
-                            class="material-symbols-outlined favoriteWebsites__appIcon">add</span></div>
-                    <div class="favoriteWebsites__appBlock"><span class="material-symbols-outlined ">add</span></div>
-                    <div class="favoriteWebsites__appBlock"><span class="material-symbols-outlined ">add</span></div>
-                    <div class="favoriteWebsites__appBlock"><span class="material-symbols-outlined ">add</span></div>
-                    <div class="favoriteWebsites__appBlock"><span class="material-symbols-outlined ">add</span></div>
-                    <div class="favoriteWebsites__appBlock"><span class="material-symbols-outlined ">add</span></div>
-                    <div class="favoriteWebsites__appBlock"><span class="material-symbols-outlined ">add</span></div>
-                    <div class="favoriteWebsites__appBlock"><span class="material-symbols-outlined ">add</span></div>
-                    <div class="favoriteWebsites__appBlock"><span class="material-symbols-outlined ">add</span></div>
-                    <div class="favoriteWebsites__appBlock"><span class="material-symbols-outlined ">add</span></div>
+                </div>
+
+                <div class="weatherSection">
+                    <div class="weatherSection__tempratureComplex">
+                        <div class="weatherSection__tempratureNumber">
+                            <span>°</span>
+                            <!-- <span id="tempValue">12</span> -->
+                            12
+                        </div>
+                        <img class="weatherSection__tempratureIcon" src="./assets/Images/Weather/orginal.svg" alt="">
+                    </div>
+
+                    <div class="weatherSection__tempratureComplex">
+                        <span class="weatherSection__tempratureText">چایی داغ جوابه!</span>
+                        <span class="weatherSection__tempratureTextIcon">☕️</span>
+                    </div>
+
+                    <div class="weatherSection__tempratureRange">
+                        <div class="weatherSection__tempratureMaximum">
+                            <span>12°</span>
+                            <span>حداکثر</span>
+                        </div>
+                        <div class="weatherSection__tempratureMinimum">
+                            <span>9°</span>
+                            <span>حداقل</span>
+                        </div>
+                    </div>
+
+                    <div class="weatherSection__forecast">
+                        <span>پیش بینی</span>
+                        <iconify-icon icon="ep:arrow-down"></iconify-icon>
+                    </div>
+
                 </div>
             </section>
-
-            <section class="timeAndWeatherSection"></section>
         </main>
 
     </div>

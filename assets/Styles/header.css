@@ -1,0 +1,51 @@
+.header {
+    width: 100%;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    gap: 10px;
+}
+
+.logoImage {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.logoTitle {
+    font-family: Vazirmatn;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(63, 107, 255);
+}
+
+.settingApp,
+.signUpApp {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settingApp__settingIcon,
+.signUpApp__signUpIcon {
+    font-size: 30px;
+    color: #fff;
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.settingApp__settingIcon:hover,
+.signUpApp__signUpIcon:hover {
+    font-size: 30px;
+    background: rgba(255, 255, 255, 0.3);
+}

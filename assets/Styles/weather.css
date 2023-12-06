@@ -1,0 +1,64 @@
+.weatherSection {
+    width: 50%;
+    height: 50%;
+    font-family: VazirmatnDigit;
+}
+
+.weatherSection {
+    padding: 8px;
+    border-bottom: 0.8px solid rgb(229, 231, 235);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+}
+
+.weatherSection__tempratureComplex,
+.weatherSection__tempratureRange {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherSection__tempratureNumber {
+    color: rgb(137, 81, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 100%;
+}
+
+.weatherSection__tempratureIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.weatherSection__tempratureText {
+    color: rgb(18, 18, 18);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.weatherSection__tempratureRange {
+    font-size: 10px;
+    width: 80%;
+    gap: 5px;
+    color: rgb(107, 114, 128);
+    justify-content: space-between;
+}
+
+.weatherSection__forecast {
+    height: 25.6px;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    border-radius: 100px;
+    border: 0.8px solid rgb(229, 231, 235);
+    cursor: pointer;
+    font-size: 8px;
+}
