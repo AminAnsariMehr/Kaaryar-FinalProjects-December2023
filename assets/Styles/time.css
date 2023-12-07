@@ -2,8 +2,7 @@
     width: calc(25% - 1em);
     height: 269px;
     background: #fff;
-    /* border-radius: 24px; */
-    border-radius: 12px;
+    border-radius: 24px;
     overflow: hidden;
     display: flex;
 }

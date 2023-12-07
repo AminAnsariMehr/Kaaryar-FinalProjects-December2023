@@ -5,14 +5,15 @@
 @import url(./google.css);
 @import url(./time.css);
 @import url(./weather.css);
+/* @import url(./responsiveMobile.css); */
 
 
 body {
     background: #c4def7;
-    height: 100vh;
     display: flex;
+    height: 100vh;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .container {
