@@ -10,50 +10,48 @@
 .timeSection {
     width: 50%;
     height: 50%;
-    border-left: 0.8px solid rgb(229, 231, 235);
-    font-family: VazirmatnDigit;
-}
-
-
-.timeSection {
     padding: 8px;
+    font-family: VazirmatnDigit;
+    border-left: 0.8px solid rgb(229, 231, 235);
     border-bottom: 0.8px solid rgb(229, 231, 235);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: green; */
 }
 
+
 .timeSection__timeIndicator {
+    width: 100%;
+    height: 50px;
     font-size: 30px;
     font-weight: 700;
     color: rgb(39, 110, 247);
-    /* font-family: VazirmatnDigit; */
-    /* background-color: black; */
     display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .solarCalendar {
     width: 100%;
     height: 24px;
     color: rgb(30, 42, 88);
-    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .timeSection__calendersSection {
     width: 100%;
-    /* background-color: black; */
     color: rgb(107, 114, 128);
     text-align: center;
-
 }
 
 .timeSection__doubleCalender {
     padding: 3px 0;
     width: 100%;
-    height: 24px;
-    /* background-color: deeppink; */
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -63,14 +61,12 @@
 
 .lunarCalendar {
     width: 60%;
-    /* background-color: black; */
 }
 
 .gregorianCalendar {
     width: 40%;
     font-family: sans-serif;
     direction: ltr;
-    /* background-color: orangered; */
 }
 
 .timeSection__btnsWrapper {
@@ -80,15 +76,12 @@
     justify-content: space-around;
     align-items: center;
     font-size: 8px;
-    /* gap: 2px; */
-    /* background-color: green; */
 }
 
 .timeSection__timer,
 .timeSection__oqat {
     height: 25.6px;
     padding: 4px 8px;
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;

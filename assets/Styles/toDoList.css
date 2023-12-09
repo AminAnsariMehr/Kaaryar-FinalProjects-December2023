@@ -9,11 +9,9 @@
     justify-content: flex-start;
     align-items: center;
     overflow: hidden;
-    /* gap: 5px; */
 }
 
 .todoSectionHeader {
-    /* background-color: blue; */
     padding: 10px;
     width: 100%;
     height: 60px;
@@ -95,7 +93,7 @@
 }
 
 /* --- Start Of Style Done Task --- */
-.todoSection__doneItem {}
+.todoSection__TasksItem--inComplete {}
 
 /* --- End Of Style Done Task --- */
 

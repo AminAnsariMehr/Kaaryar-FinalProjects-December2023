@@ -38,7 +38,7 @@ const genereteWebsitesElement = () => {
   ///// Generete Popular Websites Element  ///////
   for (let site of websitesData) {
     websitesWrapper.innerHTML += `<div class="favoriteWebsites__appBlock favoriteWebsites__appBlock--border">
-    <a href="${site.siteAddress}" class="favoriteWebsites__appLink">
+    <a href="${site.siteAddress}" class="favoriteWebsites__appLink" target="_blank">
         <img class="favoriteWebsites__appLogo" src="${site.ImageAddress}" alt="logo">
         <span class="favoriteWebsites__appName">${site.siteName}</span>
     </a>

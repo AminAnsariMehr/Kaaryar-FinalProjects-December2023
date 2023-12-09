@@ -9,8 +9,10 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="./assets/Styles/style.css">
     <link rel="stylesheet" href="./assets/Styles/responsiveMobile.css">
-    <script defer src="./assets/Scripts/googleSections.js"></script>
     <script defer src="./assets/Scripts/todoList.js"></script>
+    <script defer src="./assets/Scripts/googleSections.js"></script>
+    <script defer src="./assets/Scripts/time.js"></script>
+    <script defer src="./assets/Scripts/weather.js"></script>
 </head>
 
 <body>
@@ -62,7 +64,7 @@
                         <img src="./assets/Images/Google/icons8-google-48.svg" alt="googleLogo"
                             class="googleSearchBox__googleLogo">
                         <button class="googleSearchBox__searchBtn">
-                            <iconify-icon icon="majesticons:search-line" rotate="270deg" flip="horizontal"
+                            <iconify-icon icon="majesticons:search-line"
                                 class="googleSearchBox__searchIcon"></iconify-icon>
                         </button>
                     </section>
@@ -74,19 +76,22 @@
             <section class="timeAndWeatherSection">
 
                 <div class="timeSection">
-                    <div class="timeSection__timeIndicator">22:26</div>
+                    <div class="timeSection__timeIndicator"></div>
                     <div class="timeSection__calendersSection">
-                        <div class="solarCalendar">15 آذر</div>
+                        <div class="solarCalendar">
+                            <span class="solarCalendar__solarDay"></span>
+                            <span class="solarCalendar__solarMonth"></span>
+                        </div>
                         <div class="timeSection__doubleCalender">
                             <div class="lunarCalendar">
-                                <span class="lunarCalendar__year">1445</span>
-                                <span class="lunarCalendar__month">جمادی الاول</span>
-                                <span class="lunarCalendar__day">22</span>
+                                <span class="lunarCalendar__year"></span>
+                                <span class="lunarCalendar__month"></span>
+                                <span class="lunarCalendar__day"></span>
                             </div>
                             <div class="gregorianCalendar">
-                                <span class="gregorianCalendar__year">2023</span>
-                                <span class="gregorianCalendar__month">Dec</span>
-                                <span class="gregorianCalendar__day">6</span>
+                                <span class="gregorianCalendar__year"></span>
+                                <span class="gregorianCalendar__month"></span>
+                                <span class="gregorianCalendar__day"></span>
                             </div>
                         </div>
                     </div>
@@ -106,25 +111,26 @@
                     <div class="weatherSection__tempratureComplex">
                         <div class="weatherSection__tempratureNumber">
                             <span>°</span>
-                            <!-- <span id="tempValue">12</span> -->
-                            12
+                            <span id="tempValue"></span>
                         </div>
                         <img class="weatherSection__tempratureIcon" src="./assets/Images/Weather/orginal.svg"
                             alt="tempIcon">
                     </div>
 
-                    <div class="weatherSection__tempratureComplex">
-                        <span class="weatherSection__tempratureText">چایی داغ جوابه!</span>
-                        <span class="weatherSection__tempratureTextIcon">☕️</span>
+                    <div class="weatherSection__descriptionsText">
+                        <span class="weatherSection__tempratureText"></span>
+                        <span class="weatherSection__tempratureTextIcon"></span>
                     </div>
 
                     <div class="weatherSection__tempratureRange">
                         <div class="weatherSection__tempratureMaximum">
-                            <span>12°</span>
+                            <span>°</span>
+                            <span id="tempMax"></span>
                             <span>حداکثر</span>
                         </div>
                         <div class="weatherSection__tempratureMinimum">
-                            <span>9°</span>
+                            <span>°</span>
+                            <span id="tempMin"></span>
                             <span>حداقل</span>
                         </div>
                     </div>
