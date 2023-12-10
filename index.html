@@ -16,7 +16,9 @@
 </head>
 
 <body class="flexDoubleAliningRow">
-    <div class="container flexDoubleAliningColumn">
+    <section class="container flexDoubleAliningColumn">
+
+        <!---------------- Start Of Website Header ---------------->
         <header class="header flexDoubleAliningRow">
             <a href="#" class="logo flexDoubleAliningRow">
                 <img src="./assets/Images/Google/logoHeader.svg" class="logoImage">
@@ -29,6 +31,7 @@
                 <iconify-icon icon="ant-design:setting-filled" class="settingApp__settingIcon"></iconify-icon>
             </section>
         </header>
+        <!----------------- End Of Website Header ----------------->
 
         <main class="main flexDoubleAliningRow">
             <!---------------- Start Of To Do Section ---------------->
@@ -69,31 +72,33 @@
                         </button>
                     </section>
                 </div>
+                <!---------- Favorite Websites ---------->
                 <div class="favoriteWebsites flexDoubleAliningRow"></div>
             </section>
             <!---------------- End Of GooGle Sections ---------------->
 
             <section class="timeAndWeatherSection flexDoubleAliningRow">
 
-                <div class="timeSection flexDoubleAliningColumn">
-                    <div class="timeSection__timeIndicator flexDoubleAliningRow"></div>
+                <!----------------- Start Of Time Section ----------------->
+                <section class="timeSection flexDoubleAliningColumn">
+                    <section class="timeSection__timeIndicator flexDoubleAliningRow"></section>
                     <div class="timeSection__calendersSection">
-                        <div class="solarCalendar flexDoubleAliningRow">
+                        <section class="solarCalendar flexDoubleAliningRow">
                             <span class="solarCalendar__solarDay"></span>
                             <span class="solarCalendar__solarMonth"></span>
-                        </div>
-                        <div class="timeSection__doubleCalender flexDoubleAliningRow">
-                            <div class="lunarCalendar">
+                        </section>
+                        <section class="timeSection__doubleCalender flexDoubleAliningRow">
+                            <section class="lunarCalendar">
                                 <span class="lunarCalendar__year"></span>
                                 <span class="lunarCalendar__month"></span>
                                 <span class="lunarCalendar__day"></span>
-                            </div>
-                            <div class="gregorianCalendar">
+                            </section>
+                            <section class="gregorianCalendar">
                                 <span class="gregorianCalendar__year"></span>
                                 <span class="gregorianCalendar__month"></span>
                                 <span class="gregorianCalendar__day"></span>
-                            </div>
-                        </div>
+                            </section>
+                        </section>
                     </div>
                     <div class="timeSection__btnsWrapper flexDoubleAliningRow">
                         <div class="timeSection__timer flexDoubleAliningRow">
@@ -105,46 +110,49 @@
                             <iconify-icon icon="ep:arrow-down"></iconify-icon>
                         </div>
                     </div>
-                </div>
+                </section>
+                <!------------------ End Of Time Section ------------------>
 
+                <!---------------- Start Of Weather Section ---------------->
                 <div class="weatherSection flexDoubleAliningColumn">
-                    <div class="weatherSection__tempratureComplex flexDoubleAliningRow">
-                        <div class="weatherSection__tempratureNumber flexDoubleAliningRow">
+                    <section class="weatherSection__tempratureComplex flexDoubleAliningRow">
+                        <section class="weatherSection__tempratureNumber flexDoubleAliningRow">
                             <span>°</span>
                             <span id="tempValue"></span>
-                        </div>
+                        </section>
                         <img class="weatherSection__tempratureIcon" src="./assets/Images/Weather/orginal.svg"
                             alt="tempIcon">
-                    </div>
+                    </section>
 
-                    <div class="weatherSection__descriptionsText flexDoubleAliningRow">
+                    <section class="weatherSection__descriptionsText flexDoubleAliningRow">
                         <span class="weatherSection__tempratureText flexDoubleAliningRow"></span>
                         <span class="weatherSection__tempratureTextIcon"></span>
-                    </div>
+                    </section>
 
-                    <div class="weatherSection__tempratureRange flexDoubleAliningRow">
-                        <div class="weatherSection__tempratureMaximum">
+                    <section class="weatherSection__tempratureRange flexDoubleAliningRow">
+                        <section class="weatherSection__tempratureMaximum">
                             <span>°</span>
                             <span id="tempMax"></span>
                             <span>حداکثر</span>
-                        </div>
-                        <div class="weatherSection__tempratureMinimum">
+                        </section>
+                        <section class="weatherSection__tempratureMinimum">
                             <span>°</span>
                             <span id="tempMin"></span>
                             <span>حداقل</span>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
 
-                    <div class="weatherSection__forecast flexDoubleAliningRow">
+                    <section class="weatherSection__forecast flexDoubleAliningRow">
                         <span>پیش بینی</span>
                         <iconify-icon icon="ep:arrow-down"></iconify-icon>
-                    </div>
+                    </section>
 
                 </div>
+                <!----------------- End Of Weather Section ----------------->
             </section>
         </main>
 
-    </div>
+    </section>
 </body>
 
 </html>

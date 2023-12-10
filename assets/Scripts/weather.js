@@ -13,7 +13,6 @@ const weatherAPI =
 const getDataWeather = async () => {
   const res = await fetch(weatherAPI);
   const data = await res.json();
-  console.log(data);
 
   tempDegree.innerHTML = Math.round(data[0].current);
   tempText.innerHTML = data[0].customDescription.text;

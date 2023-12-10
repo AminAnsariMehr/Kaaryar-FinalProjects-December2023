@@ -8,9 +8,7 @@ const gregorianYear = document.querySelector(".gregorianCalendar__year");
 const gregorianMonth = document.querySelector(".gregorianCalendar__month");
 const gregorianDay = document.querySelector(".gregorianCalendar__day");
 
-const url = "https://kaaryar0506reactblog.liara.run/current/time";
-
-let seconds = new Date().getSeconds();
+const timeAPI = "https://kaaryar0506reactblog.liara.run/current/time";
 
 const showClock = () => {
   let hours = new Date().getHours();
@@ -22,7 +20,7 @@ const showClock = () => {
 };
 
 const getDataCalenders = async () => {
-  const res = await fetch(url);
+  const res = await fetch(timeAPI);
   const data = await res.json();
   solarDay.innerHTML = data.shamsi.dayInMonth;
   solarMonth.innerHTML = data.shamsi.month;
