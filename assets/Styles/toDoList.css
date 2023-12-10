@@ -31,8 +31,6 @@
     border-radius: 10px;
 }
 
-.todoSection__visibilityOff:hover {}
-
 .todoSection__TasksList {
     flex: 1;
     width: 100%;
@@ -56,7 +54,12 @@
     gap: 3px;
 }
 
-.todoSection__checkBoxIcon {
+.todoSection__checkBox {
+    display: none;
+}
+
+.todoSection__checkBoxLabel {
+    position: relative;
     width: 15px;
     height: 15px;
     margin-left: 3px;
@@ -65,15 +68,45 @@
     border-radius: 5px;
 }
 
-.todoSection__checkBoxIcon:hover {
+.todoSection__checkBoxLabel:hover {
     cursor: pointer;
 }
 
+.todoSection__checkBox:checked+.todoSection__checkBoxLabel {
+    background-color: #8f97b1;
+}
+
+.todoSection__checkBox:checked~.todoSection__userTaskContent {
+    color: #8f97b1;
+    text-decoration: line-through;
+}
+
+.todoSection__checkBox:checked+.todoSection__checkBoxLabel::before {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-size: cover;
+    background-image: url(./../Images/ToDo/check.svg);
+}
+
 .todoSection__userTaskContent {
+    width: 50%;
     font-size: 12px;
     font-weight: 600;
     word-spacing: -1.5px;
     margin-left: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.todoSection__userTaskContent:hover {
+    overflow: visible;
 }
 
 .todoSection__removeIcon,
@@ -92,10 +125,6 @@
     display: block;
 }
 
-/* --- Start Of Style Done Task --- */
-.todoSection__TasksItem--inComplete {}
-
-/* --- End Of Style Done Task --- */
 
 .todoSection__addTaskSection {
     width: 100%;

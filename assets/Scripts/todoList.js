@@ -27,7 +27,8 @@ const setLocalStorage = (todosList) => {
 
 const todosGenerator = (toDosArray) => {
   let newToDoLiElem,
-    newIconCheckBoxElem,
+    newCheckBoxElem,
+    newCheckBoxLabelElem,
     newToDoSpanElem,
     newToDoEditElem,
     newToDoDeleteElem;
@@ -35,15 +36,21 @@ const todosGenerator = (toDosArray) => {
   tasksList.innerHTML = "";
 
   toDosArray.forEach(function (todo) {
+    //  === Create LI Element ===
     newToDoLiElem = document.createElement("li");
     newToDoLiElem.className =
       "todoSection__TasksItem todoSection__TasksItem--inComplete";
 
-    //  === Create LI Element ===
-    newIconCheckBoxElem = document.createElement("i");
-
     //  === Create Check Box Element ===
-    newIconCheckBoxElem.className = "todoSection__checkBoxIcon";
+    newCheckBoxElem = document.createElement("input");
+    newCheckBoxElem.setAttribute("type", "checkbox");
+    newCheckBoxElem.setAttribute("id", `taskNum${todo.id}`);
+    newCheckBoxElem.className = "todoSection__checkBox";
+
+    //  === Create Label Check Box Element ===
+    newCheckBoxLabelElem = document.createElement("label");
+    newCheckBoxLabelElem.setAttribute("for", `taskNum${todo.id}`);
+    newCheckBoxLabelElem.className = "todoSection__checkBoxLabel";
 
     //  === Create Span Content Element ===
     newToDoSpanElem = document.createElement("span");
@@ -62,7 +69,8 @@ const todosGenerator = (toDosArray) => {
     newToDoDeleteElem.setAttribute("id", todo.id);
 
     newToDoLiElem.append(
-      newIconCheckBoxElem,
+      newCheckBoxElem,
+      newCheckBoxLabelElem,
       newToDoSpanElem,
       newToDoEditElem,
       newToDoDeleteElem
