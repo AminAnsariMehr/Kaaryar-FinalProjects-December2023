@@ -38,8 +38,9 @@ const todosGenerator = (toDosArray) => {
   toDosArray.forEach(function (todo) {
     //  === Create LI Element ===
     newToDoLiElem = document.createElement("li");
-    newToDoLiElem.className =
-      "todoSection__TasksItem todoSection__TasksItem--inComplete";
+    // newToDoLiElem.className =
+    //   "todoSection__TasksItem todoSection__TasksItem--inComplete";
+    newToDoLiElem.className = "todoSection__TasksItem flexDoubleAliningRow";
 
     //  === Create Check Box Element ===
     newCheckBoxElem = document.createElement("input");

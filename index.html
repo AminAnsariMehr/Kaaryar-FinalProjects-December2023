@@ -15,39 +15,39 @@
     <script defer src="./assets/Scripts/weather.js"></script>
 </head>
 
-<body>
-    <div class="container">
-        <header class="header">
-            <a href="#" class="logo">
+<body class="flexDoubleAliningRow">
+    <div class="container flexDoubleAliningColumn">
+        <header class="header flexDoubleAliningRow">
+            <a href="#" class="logo flexDoubleAliningRow">
                 <img src="./assets/Images/Google/logoHeader.svg" class="logoImage">
                 <h1 class="logoTitle">دستیار</h1>
             </a>
-            <section class="signUpApp">
+            <section class="signUpApp flexDoubleAliningRow">
                 <iconify-icon icon="fluent:person-32-filled" class="signUpApp__signUpIcon"></iconify-icon>
             </section>
-            <section class="settingApp">
+            <section class="settingApp flexDoubleAliningRow">
                 <iconify-icon icon="ant-design:setting-filled" class="settingApp__settingIcon"></iconify-icon>
             </section>
         </header>
 
-        <main class="main">
+        <main class="main flexDoubleAliningRow">
             <!---------------- Start Of To Do Section ---------------->
-            <section class="todoSection">
-                <header class="todoSectionHeader">
+            <section class="todoSection flexDoubleAliningColumn">
+                <header class="todoSectionHeader flexDoubleAliningRow">
                     <h2 class="todoSection__Title">دست نویس</h2>
                     <iconify-icon icon="material-symbols:visibility-off"
                         class="todoSection__visibilityOff"></iconify-icon>
                 </header>
 
                 <!------- Start Of Tasks List ------->
-                <ul class="todoSection__TasksList"></ul>
+                <ul class="todoSection__TasksList flexDoubleAliningColumn"></ul>
                 <!-------- End Of Tasks List -------->
 
                 <!---- Start Of Add Task Section ---->
-                <section class="todoSection__addTaskSection">
-                    <div class="todoSection__addInputWrapper">
+                <section class="todoSection__addTaskSection flexDoubleAliningRow">
+                    <div class="todoSection__addInputWrapper flexDoubleAliningRow">
                         <input class="todoSection__addInputTask" type="text" placeholder="نوشتن تسک جدید">
-                        <button class="todoSection__addBtnTask">
+                        <button class="todoSection__addBtnTask flexDoubleAliningRow">
                             <iconify-icon icon="mingcute:add-fill" class="todoSection__addTaskIcon"></iconify-icon>
                         </button>
                     </div>
@@ -57,32 +57,32 @@
             <!----------------- End Of To Do Section ----------------->
 
             <!--------------- Start Of GooGle Sections --------------->
-            <section class="googleSection">
-                <div class="googleSearchSection">
-                    <section class="googleSearchBoxWrapper">
+            <section class="googleSection flexDoubleAliningColumn">
+                <div class="googleSearchSection flexDoubleAliningRow">
+                    <section class="googleSearchBoxWrapper flexDoubleAliningRow">
                         <input type="text" class="googleSearchBox__searchInput" placeholder="جستجو در گوگل">
                         <img src="./assets/Images/Google/icons8-google-48.svg" alt="googleLogo"
                             class="googleSearchBox__googleLogo">
-                        <button class="googleSearchBox__searchBtn">
+                        <button class="googleSearchBox__searchBtn flexDoubleAliningRow">
                             <iconify-icon icon="majesticons:search-line"
                                 class="googleSearchBox__searchIcon"></iconify-icon>
                         </button>
                     </section>
                 </div>
-                <div class="favoriteWebsites"></div>
+                <div class="favoriteWebsites flexDoubleAliningRow"></div>
             </section>
             <!---------------- End Of GooGle Sections ---------------->
 
-            <section class="timeAndWeatherSection">
+            <section class="timeAndWeatherSection flexDoubleAliningRow">
 
-                <div class="timeSection">
-                    <div class="timeSection__timeIndicator"></div>
+                <div class="timeSection flexDoubleAliningColumn">
+                    <div class="timeSection__timeIndicator flexDoubleAliningRow"></div>
                     <div class="timeSection__calendersSection">
-                        <div class="solarCalendar">
+                        <div class="solarCalendar flexDoubleAliningRow">
                             <span class="solarCalendar__solarDay"></span>
                             <span class="solarCalendar__solarMonth"></span>
                         </div>
-                        <div class="timeSection__doubleCalender">
+                        <div class="timeSection__doubleCalender flexDoubleAliningRow">
                             <div class="lunarCalendar">
                                 <span class="lunarCalendar__year"></span>
                                 <span class="lunarCalendar__month"></span>
@@ -95,21 +95,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="timeSection__btnsWrapper">
-                        <div class="timeSection__timer">
+                    <div class="timeSection__btnsWrapper flexDoubleAliningRow">
+                        <div class="timeSection__timer flexDoubleAliningRow">
                             <span>تایمر</span>
                             <iconify-icon icon="ep:arrow-down"></iconify-icon>
                         </div>
-                        <div class="timeSection__oqat">
+                        <div class="timeSection__oqat flexDoubleAliningRow">
                             <span>اوقات شرعی</span>
                             <iconify-icon icon="ep:arrow-down"></iconify-icon>
                         </div>
                     </div>
                 </div>
 
-                <div class="weatherSection">
-                    <div class="weatherSection__tempratureComplex">
-                        <div class="weatherSection__tempratureNumber">
+                <div class="weatherSection flexDoubleAliningColumn">
+                    <div class="weatherSection__tempratureComplex flexDoubleAliningRow">
+                        <div class="weatherSection__tempratureNumber flexDoubleAliningRow">
                             <span>°</span>
                             <span id="tempValue"></span>
                         </div>
@@ -117,12 +117,12 @@
                             alt="tempIcon">
                     </div>
 
-                    <div class="weatherSection__descriptionsText">
-                        <span class="weatherSection__tempratureText"></span>
+                    <div class="weatherSection__descriptionsText flexDoubleAliningRow">
+                        <span class="weatherSection__tempratureText flexDoubleAliningRow"></span>
                         <span class="weatherSection__tempratureTextIcon"></span>
                     </div>
 
-                    <div class="weatherSection__tempratureRange">
+                    <div class="weatherSection__tempratureRange flexDoubleAliningRow">
                         <div class="weatherSection__tempratureMaximum">
                             <span>°</span>
                             <span id="tempMax"></span>
@@ -135,7 +135,7 @@
                         </div>
                     </div>
 
-                    <div class="weatherSection__forecast">
+                    <div class="weatherSection__forecast flexDoubleAliningRow">
                         <span>پیش بینی</span>
                         <iconify-icon icon="ep:arrow-down"></iconify-icon>
                     </div>

@@ -10,13 +10,14 @@ const gregorianDay = document.querySelector(".gregorianCalendar__day");
 
 const url = "https://kaaryar0506reactblog.liara.run/current/time";
 
-let hours = new Date().getHours();
-let minutes = new Date().getMinutes();
 let seconds = new Date().getSeconds();
 
 const showClock = () => {
-  hours = hours < 10 ? "0" + hours : hours;
+  let hours = new Date().getHours();
+  let minutes = new Date().getMinutes();
+
   minutes = minutes < 10 ? "0" + minutes : minutes;
+  hours = hours < 10 ? "0" + hours : hours;
   timeIndicator.innerHTML = `${hours}:${minutes}`;
 };
 
@@ -33,5 +34,6 @@ const getDataCalenders = async () => {
   gregorianDay.innerHTML = data.miladi.dayInMonth;
 };
 
+setInterval(showClock, 1000);
 showClock();
 getDataCalenders();

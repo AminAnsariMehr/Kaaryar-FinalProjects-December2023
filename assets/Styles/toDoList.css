@@ -4,10 +4,7 @@
     height: 100%;
     background-color: #fff;
     border-radius: 24px;
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     overflow: hidden;
 }
 
@@ -17,9 +14,7 @@
     height: 60px;
     font-size: 1.5em;
     font-weight: 700;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     border-bottom: 0.8px solid #e5e7eb;
 }
 
@@ -35,10 +30,7 @@
     flex: 1;
     width: 100%;
     padding: 10px 5px;
-    display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     gap: 10px;
 }
 
@@ -48,9 +40,6 @@
     background-color: #fff;
     border: 0.8px solid rgb(229, 231, 235);
     border-radius: 10px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     gap: 3px;
 }
 
@@ -130,12 +119,7 @@
     width: 100%;
     height: 60px;
     padding: 12px;
-    display: flex;
-    justify-content: center;
     border-top: 0.8px solid rgb(229, 231, 235);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .todoSection__addInputWrapper {
@@ -144,9 +128,7 @@
     height: 40px;
     border: 0.8px solid rgb(214, 211, 209);
     border-radius: 6px;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .todoSection__addInputTask {
@@ -165,9 +147,6 @@
     width: 14px;
     height: 18px;
     background: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .todoSection__addTaskIcon {
