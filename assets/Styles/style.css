@@ -1,5 +1,6 @@
 @import url(./CSSReset.css);
 @import url(./fontVazirMatn.css);
+@import url(./variables.css);
 @import url(./generalClasses.css);
 @import url(./header.css);
 @import url(./toDoList.css);

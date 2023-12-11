@@ -2,7 +2,7 @@
     width: calc(25% - 1em);
     height: 269px;
     background: #fff;
-    border-radius: 24px;
+    border-radius: var(--borderRadius-bigCurved);
     overflow: hidden;
     align-items: flex-start;
 }
@@ -12,8 +12,8 @@
     height: 50%;
     padding: 8px;
     font-family: VazirmatnDigit;
-    border-left: 0.8px solid rgb(229, 231, 235);
-    border-bottom: 0.8px solid rgb(229, 231, 235);
+    border-left: var(--bordeStyle-main);
+    border-bottom: var(--bordeStyle-main);
     justify-content: space-evenly;
 }
 
@@ -22,19 +22,19 @@
     height: 50px;
     font-size: 30px;
     font-weight: 700;
-    color: rgb(39, 110, 247);
+    color: #276ef7;
 }
 
 .solarCalendar {
     width: 100%;
     height: 24px;
-    color: rgb(30, 42, 88);
+    color: var(--textInput-color);
     gap: 5px;
 }
 
 .timeSection__calendersSection {
     width: 100%;
-    color: rgb(107, 114, 128);
+    color: #6b7280;
     text-align: center;
 }
 
@@ -69,6 +69,6 @@
     padding: 4px 8px;
     gap: 1px;
     border-radius: 100px;
-    border: 0.8px solid rgb(229, 231, 235);
+    border: var(--bordeStyle-main);
     cursor: pointer;
 }

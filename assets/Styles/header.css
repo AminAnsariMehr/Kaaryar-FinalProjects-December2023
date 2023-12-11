@@ -17,10 +17,10 @@
 }
 
 .logoTitle {
-    font-family: Vazirmatn;
-    font-weight: 700;
     font-size: 20px;
-    color: rgb(63, 107, 255);
+    font-weight: 700;
+    font-family: Vazirmatn;
+    color: var(--primaryBlue-color);
 }
 
 .settingApp,
@@ -30,14 +30,14 @@
 
 .settingApp__settingIcon,
 .signUpApp__signUpIcon {
-    font-size: 30px;
-    color: #fff;
     padding: 4px;
-    border-radius: 50%;
+    color: #fff;
+    font-size: 30px;
+    border-radius: var(--borderRadius-circle);
 }
 
 .settingApp__settingIcon:hover,
 .signUpApp__signUpIcon:hover {
     font-size: 30px;
-    background: rgba(255, 255, 255, 0.3);
+    background: #ffffff4d;
 }

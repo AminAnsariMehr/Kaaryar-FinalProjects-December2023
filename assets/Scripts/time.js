@@ -1,3 +1,4 @@
+const hourIcon = document.querySelector(".weatherSection__tempratureIcon");
 const timeIndicator = document.querySelector(".timeSection__timeIndicator");
 const solarDay = document.querySelector(".solarCalendar__solarDay");
 const solarMonth = document.querySelector(".solarCalendar__solarMonth");
@@ -10,6 +11,7 @@ const gregorianDay = document.querySelector(".gregorianCalendar__day");
 
 const timeAPI = "https://kaaryar0506reactblog.liara.run/current/time";
 
+// get time and display in DOM
 const showClock = () => {
   let hours = new Date().getHours();
   let minutes = new Date().getMinutes();
@@ -19,6 +21,7 @@ const showClock = () => {
   timeIndicator.innerHTML = `${hours}:${minutes}`;
 };
 
+// get datas all calenders
 const getDataCalenders = async () => {
   const res = await fetch(timeAPI);
   const data = await res.json();
@@ -32,6 +35,16 @@ const getDataCalenders = async () => {
   gregorianDay.innerHTML = data.miladi.dayInMonth;
 };
 
+// change night and day icon
+const changeIcon = () => {
+  let hours = new Date().getHours();
+  hours >= 5 && hours < 18
+    ? (hourIcon.src = "./assets/Images/Weather/sun.png")
+    : (hourIcon.src = "./assets/Images/Weather/moon.png");
+};
+
 setInterval(showClock, 1000);
+setInterval(changeIcon, 1000);
 showClock();
+changeIcon();
 getDataCalenders();

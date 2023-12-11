@@ -1,1 +1,16 @@
-:root {}
+:root {
+    /* colors */
+    --primaryBlue-color: #3f6bff;
+    --secondaryBlue-color: #2f3f7d;
+    --textInput-color: #1e2a58;
+    --googleSection-color: #3d518f;
+    --iconifyIcon-color: #babdc6;
+
+    /* border */
+    --bordeStyle-main: 0.8px solid #e5e7eb;
+
+    /* borders radius */
+    --borderRadius-circle: 50%;
+    --borderRadius-bigCurved: 24px;
+    --borderRadius-maximum: 9999px;
+}

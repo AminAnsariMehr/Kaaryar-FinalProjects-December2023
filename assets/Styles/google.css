@@ -1,4 +1,3 @@
-/* -------------------------- Start Of Google Section -------------------------- */
 .googleSection {
     width: calc(50% - 1em);
     overflow: hidden;
@@ -10,7 +9,7 @@
     height: 85px;
     padding: 24px;
     background: #fff;
-    border-radius: 24px;
+    border-radius: var(--borderRadius-bigCurved);
 }
 
 .googleSearchBoxWrapper {
@@ -24,10 +23,10 @@
     width: 100%;
     height: 90%;
     padding: 0 38px;
-    color: rgb(61, 81, 143);
+    color: var(--googleSection-color);
     background-color: #f3f4f6;
     font-size: 14px;
-    border-radius: 9999px;
+    border-radius: var(--borderRadius-maximum);
 }
 
 .googleSearchBox__googleLogo {
@@ -42,8 +41,8 @@
     left: 8px;
     width: 47px;
     height: 31px;
-    border-radius: 100px;
-    background: #3d518f;
+    border-radius: var(--borderRadius-maximum);
+    background: var(--googleSection-color);
     color: #fff;
 }
 
@@ -88,8 +87,7 @@
     width: 36px;
     height: 36px;
     font-size: 32px;
-    color: #babdc6;
-
+    color: var(--iconifyIcon-color);
 }
 
 .favoriteWebsites__appIcon--size {
@@ -107,5 +105,3 @@
     font-size: 14px;
     font-weight: 700;
 }
-
-/* ---------------------------- End Of Google Section ---------------------------- */

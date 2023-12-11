@@ -6,7 +6,7 @@
 
 .weatherSection {
     padding: 8px;
-    border-bottom: 0.8px solid rgb(229, 231, 235);
+    border-bottom: var(--bordeStyle-main);
     justify-content: space-evenly;
 }
 
@@ -18,19 +18,19 @@
     width: 80%;
     height: 22px;
     font-size: 10px;
-    color: rgb(107, 114, 128);
+    color: #6b7280;
     justify-content: space-between;
 }
 
 .weatherSection__tempratureNumber {
-    width: 100%;
+    width: 50%;
     color: rgb(137, 81, 254);
     font-size: 30px;
 }
 
 .weatherSection__tempratureIcon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .weatherSection__descriptionsText {
@@ -50,7 +50,7 @@
     padding: 4px 8px;
     height: 25.6px;
     font-size: 8px;
-    border: 0.8px solid rgb(229, 231, 235);
+    border: var(--bordeStyle-main);
     border-radius: 100px;
     cursor: pointer;
     gap: 1px;

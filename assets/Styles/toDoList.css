@@ -1,9 +1,8 @@
-/* -------------------------- Start Of To Do Section -------------------------- */
 .todoSection {
     width: calc(25% - 1em);
     height: 100%;
     background-color: #fff;
-    border-radius: 24px;
+    border-radius: var(--borderRadius-bigCurved);
     justify-content: flex-start;
     overflow: hidden;
 }
@@ -15,14 +14,14 @@
     font-size: 1.5em;
     font-weight: 700;
     justify-content: space-between;
-    border-bottom: 0.8px solid #e5e7eb;
+    border-bottom: var(--bordeStyle-main);
 }
 
 .todoSection__visibilityOff {
     padding: 8px;
     font-size: 16px;
-    color: rgb(47, 63, 125);
-    background-color: rgb(243, 244, 246);
+    color: var(--secondaryBlue-color);
+    background-color: #f3f4f6;
     border-radius: 10px;
 }
 
@@ -38,7 +37,7 @@
     width: 97%;
     padding: 8px 4px;
     background-color: #fff;
-    border: 0.8px solid rgb(229, 231, 235);
+    border: var();
     border-radius: 10px;
     gap: 3px;
 }
@@ -119,14 +118,14 @@
     width: 100%;
     height: 60px;
     padding: 12px;
-    border-top: 0.8px solid rgb(229, 231, 235);
+    border-top: var(--bordeStyle-main);
 }
 
 .todoSection__addInputWrapper {
     padding: 0 4px;
     width: 100%;
     height: 40px;
-    border: 0.8px solid rgb(214, 211, 209);
+    border: var(--bordeStyle-main);
     border-radius: 6px;
     justify-content: space-between;
 }
@@ -134,7 +133,7 @@
 .todoSection__addInputTask {
     flex: 1;
     font-size: 14px;
-    color: rgb(30, 42, 88);
+    color: var(--textInput-color);
     font-weight: 700;
 }
 
@@ -151,7 +150,5 @@
 
 .todoSection__addTaskIcon {
     font-size: 14px;
-    color: rgb(168, 166, 164);
+    color: var(--iconifyIcon-color);
 }
-
-/* --------------------------- End Of To Do Section --------------------------- */
